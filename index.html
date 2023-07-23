@@ -2,7 +2,9 @@
   <head>Magnes side</head>
   <body>
     <h1>
-      <div id="paypal-button-container-P-2SC76059WH893923FMS6Y3GA"></div>
+Abonner på stuff
+    </h1>
+    <div id="paypal-button-container-P-0T1298279V3825547MSTLK4Q"></div>
 <script src="https://www.paypal.com/sdk/js?client-id=sb&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
 <script>
   paypal.Buttons({
@@ -15,15 +17,14 @@
       createSubscription: function(data, actions) {
         return actions.subscription.create({
           /* Creates the subscription */
-          plan_id: 'P-2SC76059WH893923FMS6Y3GA',
+          plan_id: 'P-0T1298279V3825547MSTLK4Q',
           quantity: 1 // The quantity of the product for a subscription
         });
       },
       onApprove: function(data, actions) {
         alert(data.subscriptionID); // You can add optional success message for the subscriber here
       }
-  }).render('#paypal-button-container-P-2SC76059WH893923FMS6Y3GA'); // Renders the PayPal button
+  }).render('#paypal-button-container-P-0T1298279V3825547MSTLK4Q'); // Renders the PayPal button
 </script>
-    </h1>
   </body>
 </html>
